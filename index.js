@@ -8,9 +8,9 @@ const db = require("./config/mongoose"); // mongoose configuration
 app.use(express.urlencoded());
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => res.send("Hello World!"));
+//app.get("/", (req, res) => res.send("Hello World!"));
 //use express router
-//app.use("/", require("./routes"));
+app.use("/", require("./routes"));
 
 //This app starts a server and listens on port 8000 for connections.
 app.listen(port, function (err) {
