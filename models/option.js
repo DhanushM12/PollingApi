@@ -8,7 +8,7 @@ const optionSchema = new mongoose.Schema(
       required: true,
     },
     question: {
-      title: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Question",
     },
     vote: {
